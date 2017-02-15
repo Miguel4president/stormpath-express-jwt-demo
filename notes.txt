@@ -1,0 +1,31 @@
+User account passwords are
+
+username${username.length}Pass
+
+
+Things to mention:
+
+1. Cors stuff will need to be dealt with if we use different domains only.
+2. All the UI can be stripped from this app, I just didn't because it doesn't hurt.
+3. This is based on giving a jwt in the browser cookie, but we can also do headers
+  - The insentive not to, is that the browser will automatically keep passing the cookies
+  - To apps within our domain, so we can just read it out of there
+  - Nothing would be needed to do in Pippin in that case
+  - Then again, the UI renders differently based on your permissions, so you might need that info
+4. Verification stuff
+  - Currently using HS algorithm, aka a single key
+  - We can easily swap to RS and use asymmetric security (we are Currently)
+5. Microservices that need auth would only need to implement verification of the token
+  - This can be in the node dependencies repository
+  - It only needs the public key of the auth server to verify. (Fun side project, we can every do that dynamically)
+
+
+
+
+  Fun optionals:
+    1. Dynamic public key additions, at least end points for adding/removing keys so we don't have to restart
+      - If we did this, then we could generate the keypair on app start and not have to store them in a repo
+    2. Routes endpoint
+
+
+Demo Steps

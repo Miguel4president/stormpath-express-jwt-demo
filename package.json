@@ -1,0 +1,22 @@
+{
+  "name": "stormpath-express-jwt",
+  "version": "0.1.0",
+  "description": "A simple Express.js web application to demonstrate core Stormpath functionality.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha"
+  },
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.1",
+    "express": "^4.13.3",
+    "express-stormpath": "^3.x",
+    "jade": "^1.11.0",
+    "jsonwebtoken": "^7.2.1"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  }
+}
