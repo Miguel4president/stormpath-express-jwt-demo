@@ -39,7 +39,7 @@ describe('TokenService', function() {
     });
 
     it('should have stormpath custom permission data', function() {
-      var data = decodedToken.payload.body.data;
+      var data = decodedToken.payload.body.data.CustomData;
       assert(data.href);
       assert(data.createdAt);
       assert(data.modifiedAt);

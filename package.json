@@ -1,5 +1,5 @@
 {
-  "name": "stormpath-express-jwt",
+  "name": "stormpath-express-jwt-demo",
   "version": "0.1.0",
   "description": "A simple Express.js web application to demonstrate core Stormpath functionality.",
   "main": "server.js",
