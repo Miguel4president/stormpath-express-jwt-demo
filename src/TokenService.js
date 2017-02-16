@@ -79,7 +79,7 @@ class TokenService {
       body: {
         user: stormpathAccount.username,
         userId: stormpathAccount.href,
-        data: stormpathAccount.customData.CustomData,
+        data: stormpathAccount.customData,
         tenantName: 'tenantName',
         tenantId: 'tenantId'
       },
