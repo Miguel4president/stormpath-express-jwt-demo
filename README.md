@@ -38,6 +38,17 @@ A simple Express.js web application to demonstrate core Stormpath functionality.
 
 5. Visit [http://localhost:3000/](http://localhost:3000/) in your browser
 
+6. Checkout [http://localhost:3000/routes](http://localhost:3000/routes) to see what is available.
+
+7. After login, grab a token at [http://localhost:3000/newToken](http://localhost:3000/newToken).
+
+8. Start the dummy microservice
+  ```bash
+  npm run service
+  ```
+
+9. Hit [http://localhost:3001/data](http://localhost:3000/data) to verify if your token works (aka your stormpath user has the viewData permission)
+
 ## Learn More
 Visit [http://docs.stormpath.com/nodejs/express/latest/](http://docs.stormpath.com/nodejs/express/latest/)
 
